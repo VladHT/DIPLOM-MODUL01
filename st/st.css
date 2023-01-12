@@ -295,10 +295,6 @@ a{
     background-color: #2B3541;
     color: #FBF138;
 }
-.sslka:hover ~ .action-block-grad  {
-    background-image: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
-    opacity: 1;
-}
 
 
 
