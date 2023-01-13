@@ -188,7 +188,7 @@ a{
     justify-content: space-between;
     height: 600px;
 }
-.action-block p{
+.action-block span{
     margin: 31px 0px 0px 31px;
     font-weight: 700;
     font-size: 18px;
@@ -218,7 +218,7 @@ a{
 .action-block-grad:first-child{
     background-image: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
     opacity: 0.3;
-    transition: 2s;
+    transition: 1s;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -226,11 +226,12 @@ a{
 .action-block:first-child{
     background-image: url(../files/@2x/maraphon@2x.png);background-size: cover;
     background-repeat: no-repeat;
+    background-position-y: 2px;
 }
 .action-block-grad:nth-child(2){
     background-image: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
     opacity: 0.3;
-    transition: 2s;
+    transition: 1s;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -242,7 +243,7 @@ a{
 .action-block-grad:nth-child(3){
     background-image: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
     opacity: 0.3;
-    transition: 2s;
+    transition: 1s;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -278,12 +279,10 @@ a{
 }
 .action-text{
     margin-bottom: 60px;
-    padding-top: 0.1px;
+    margin-top: 31px;
     padding-right: 96px;
 }
 .action-block{
-    max-width: 368.32px;
-    max-height: 600px;
     position: relative;
 }
 .sslka{
@@ -295,6 +294,151 @@ a{
     background-color: #2B3541;
     color: #FBF138;
 }
+
+    /* Forth block */
+
+.trenings-verh{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.trenings-verh h2{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    color: #2B3541;
+    max-width: 265px;
+}
+.trenings-verh p{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 125%;
+    color: #2B3541;
+    margin-bottom: 67px;
+}
+.trenings{
+    margin-top: 127px;
+}
+.grid-elements{
+    display: grid;
+    grid-template-columns: 367px 366px 367px;
+    grid-template-rows: 309px 75px 281px;
+    justify-content: space-between;
+    gap: 20px;
+}
+.first-trening{
+    width: 367px;
+    height: 309px;
+    margin: 3px 0px 0px 1px;
+    border: 1px solid ;
+    border-color: #2b354133;
+    position: relative;
+}
+.second-trening{
+    border: 1px solid #2B354133;
+    width: 366px;
+    margin: 3px 0px 0px -1px;
+    height: 402px;
+    position: relative;
+}
+.third-trening{
+    width: 367px;
+    height: 309px;
+    margin: 3px 0px 0px -2px;
+    border: 1px solid #2B354133;
+    position: relative;
+}
+.forth-trening{
+    width: 367px;
+    height: 374px;
+    margin: 3px 0px 0px 1px;
+    border: 1px solid #2B354133;
+    position: relative;
+}
+.five-trening{
+    width: 366px;
+    height: 281px;
+    margin-top: 96px;
+    margin-left: -1px;
+    border: 1px solid #2B354133;
+    justify-items: baseline;
+    position: relative;
+}
+.six-trening{
+    width: 367px;
+    height: 374px;
+    margin-top: 3px;
+    margin-left: -2px;
+    border: 1px solid #2B354133;
+    position: relative;
+}
+.grid-elements .action-block-grad{
+    background-image: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
+    opacity: 0;
+    transition: 1s;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.first-trening:hover .action-block-grad{
+    background-image: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
+    opacity: 0.7;
+}
+.second-trening:hover .action-block-grad{
+    background-image: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
+    opacity: 0.7;
+}
+.third-trening:hover .action-block-grad{
+    background-image: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
+    opacity: 0.7;
+}
+.forth-trening:hover .action-block-grad{
+    background-image: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
+    opacity: 0.7;
+}
+.five-trening:hover .action-block-grad{
+    background-image: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
+    opacity: 0.7;
+}
+.six-trening:hover .action-block-grad{
+    background-image: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
+    opacity: 0.7;
+}
+.grid-elements p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #010101;
+    opacity: 0.7;
+    margin-left: 206px;
+    margin-top: 21px;
+}
+.grid-elements h4{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 125%;
+    color: #2B3541;
+    margin: 37px 0 0 31px;
+}
+.first-trening img{
+    margin: 95px 0 0 30px;
+}
+.second-trening img{
+    margin: 168px 0 0 30px;
+}
+.third-trening img{
+    margin: 110px 0 0 30px;
+}
+.forth-trening img{
+    margin: 118px 0 0 30px;
+}
+.five-trening img{
+    margin: 71px 0 0 30px;
+}
+.six-trening img{
+    margin: 159px 0 0 30px;
+}
+
 
 
 
