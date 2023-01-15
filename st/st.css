@@ -736,11 +736,13 @@ main{
     width: 27px;
     height: 27px;
     background-size: cover;
+    background-position: center;
 }
 .footer-nav .header-FB{
     width: 27px;
     height: 27px;
     background-size: cover;
+    background-position: center;
 }
 .footer-info{
     display: flex;
