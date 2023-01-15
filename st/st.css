@@ -602,6 +602,13 @@ input:invalid{
     height: 336px;
     margin: 33px 0 0 77px;
 }
+.about-right .action-block-grad{
+    max-width: 581px;
+    max-height: 336px;
+}
+.about-right:hover .action-block-grad{
+    opacity: 0.3;
+}
 .about-left{
     max-width: 483px;
     max-height: 177px;
