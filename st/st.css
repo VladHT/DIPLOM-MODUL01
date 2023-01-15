@@ -478,7 +478,7 @@ a{
     /* five block */
     
 .mail{
-    margin: 160px auto;
+    margin: 160px auto 125px;
     width: 1920px;
 }
 .mail-info{
@@ -586,4 +586,165 @@ input:invalid{
 }
 .custom-checkbox:checked+label::before {
     background-image: url(../icons/check_box.svg);
+}
+
+    /* six block */
+
+.about-header{
+    display: flex;
+    margin-bottom: 51px;
+}
+.about-right{
+    background-image: url(../files/@2x/trainer@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 581px;
+    height: 336px;
+    margin: 33px 0 0 77px;
+}
+.about-left{
+    max-width: 483px;
+    max-height: 177px;
+    margin-left: 2px;
+}
+.about-left h2{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    color: #2B3541;
+    margin-bottom: 20px;
+}
+.about-left p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #2B3541;
+    margin-bottom: 34px;
+}
+.about-left button{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #2B3541;
+    background-color: #FBF138;
+    border: none;
+    padding: 21px 51px 20px;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+}
+.about-left button:hover{
+    color: #FBF138;
+    background-color: #2B3541;
+}
+.about-footer{
+    display: flex;
+    margin-left: 1px;
+    gap:67px;
+}
+.about-footer h5{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 125%;
+    color: #2B3541;
+    margin-bottom: 0;
+}
+.about-footer p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #2B3541;
+    opacity: 0.6;
+    margin-top: 21px;
+}
+.ab-foot1{
+    width: 231px;
+}
+.ab-foot2{
+    width: 284px;
+}
+.ab-foot3{
+    width: 221px;
+}
+.ab-foot4{
+    width: 204px;
+}
+main{
+    margin-bottom: 186px;
+}
+.footer{
+    width: 1920px;
+}
+.footer-nav{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    background-image: url(../icons/Pattern.svg);
+    background-position: 824px 0px;
+    background-repeat: no-repeat;
+    background-size: 47px;
+    margin-bottom: 17px;
+}
+.footer-nav ul{
+    display: flex;
+    gap: 90.5px;
+    margin-top: 19px;
+    list-style: none;
+}
+.footer-nav a{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #2B3541;
+}
+.footer-nav .pochta {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2B3541;
+    margin-left: 182px;
+    margin-top: 2px;
+}
+.footer-nav .links{
+    margin-left: 30px;
+    margin-top: -1.5px;
+}
+.footer-nav .header-inst{
+    width: 27px;
+    height: 27px;
+    background-size: cover;
+}
+.footer-nav .header-FB{
+    width: 27px;
+    height: 27px;
+    background-size: cover;
+}
+.footer-info{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #2B3541;
+    margin-left: 2px;
+    margin-bottom: 19px;
+}
+.prava{
+    opacity: 0.3;
+}
+.text{
+    margin: 0;
+}
+.text span{
+    opacity: 0.3;
+}
+.plat {
+    text-decoration:underline;
+    color: #2B3541;
+    opacity: 0.3;
+}
+.plat:hover{
+    color: #010101;
+    opacity: 1;
 }
