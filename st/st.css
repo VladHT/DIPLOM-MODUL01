@@ -755,3 +755,6 @@ main{
     color: #010101;
     opacity: 1;
 }
+.footer-nav ul a:hover{
+    color: #FBF138;
+}
