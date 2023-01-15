@@ -199,9 +199,12 @@ a{
 .action-block h3{
     font-weight: 700;
     font-size: 28px;
+    color: #2B3541;
     line-height: 125%;
+    opacity: 1;
     margin: 19px 0 60px 30px;
     max-width: 241px;
+    opacity: 0.999;
 }
 .action-block .sslka{
     text-decoration: none;
@@ -479,21 +482,20 @@ a{
     
 .mail{
     margin: 160px auto 125px;
-    width: 1920px;
 }
 .mail-info{
     position: relative;
-    padding: 49px 599px 80px 620px;
+    padding: 49px 0 80px 0;
+    align-items: center;
     display: flex;
+    margin-left: -5px;
     flex-direction: column;
     background-color: #F3F3F3;
-    background-image: url(../icons/Pattern.svg);
-    background-position: 569px 53px;
-    background-repeat: no-repeat;
 }
 .viravnivanie{
     display: flex;
     flex-direction: column;
+    margin-left: 21px;
 }
 .mail-info h2{
     font-weight: 700;
@@ -502,6 +504,19 @@ a{
     color: #2B3541;
     margin-left: 8px;
     margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+}
+.mail-info img{
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -52px;
+    float: left;
+    z-index: 1;
+}
+.h2-img{
+    position: relative;
 }
 .rovn button{
     margin-left: 15px;
