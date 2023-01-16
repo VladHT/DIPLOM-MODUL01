@@ -165,7 +165,7 @@ a{
     cursor: pointer;
 }
 .yelow-block{
-    width: 444px;
+    width: 463px;
     height: 850px;
     background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
     opacity: 0.2;
@@ -281,8 +281,8 @@ a{
     opacity: 1;
 }
 .action-text{
-    margin-bottom: 60px;
-    margin-top: 31px;
+    padding-bottom: 393px;
+    padding-top: 31px;
     padding-right: 96px;
 }
 .action-block{
@@ -774,4 +774,12 @@ main{
 }
 .footer-nav ul a:hover{
     color: #FBF138;
+}
+
+    /* new */
+
+.action-block-grad ~ .action-text:hover{
+    background-image: linear-gradient(180deg, #FBF138 -50%, rgba(253, 249, 182, 0) 100%);
+    opacity: 0.9999;
+    transition: 1s;
 }
