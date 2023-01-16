@@ -803,6 +803,7 @@ main{
         background-image: url(../icons/burger\ 1.svg);
         border: none;
         background-position: center;
+        background-color:transparent;
     }
     .container{
         max-width: 637px;
