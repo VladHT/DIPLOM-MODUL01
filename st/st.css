@@ -783,3 +783,91 @@ main{
     opacity: 0.9999;
     transition: 1s;
 }
+.fitnes-but{
+    display: none;
+}
+.plus{
+    display: none;
+}
+
+    /* Adaptiv */
+
+@media (max-width:667px) {
+    .header-nav{
+        display: none;
+    }
+    .fitnes-but{
+        display: block;
+        width: 29px;
+        height: 22px;
+        background-image: url(../icons/burger\ 1.svg);
+        border: none;
+        background-position: center;
+    }
+    .container{
+        max-width: 637px;
+    }
+    .main-verh{
+        flex-wrap: wrap;
+    }
+    .main-left{
+        margin-bottom: 21px;
+    }
+    .main-right{
+        margin-top: 143px;
+        max-height: 414px;
+    }
+    .devushka{
+        position: absolute;
+        max-width: 640px;
+        left: 0px;
+        top: 639px;
+    }
+    .yelow-block{
+        max-height: 414px;
+        width: 641px;
+    }
+    .strelka{
+        display: none;
+    }
+    .action h2{
+        margin-top: 128px;
+    }
+    .action-block:first-child{
+        width: 313px;
+        height: 514px;
+    }
+    .action-block:nth-child(2){
+        width: 313px;
+        height: 514px;
+    }
+    .action-block:nth-child(3){
+        width: 640px;
+        height: 1040px;
+        background-position: center;
+    }
+    .action-text{
+        padding-bottom: 306px;
+    }
+    .actions-flex{
+        flex-wrap: wrap;
+        height: inherit;
+        gap: 10px;
+    }
+    .sslka{
+        left: 0;
+        right: inherit;
+    }
+    .plus{
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-image: url(../icons/plus.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        border: none;
+        background-color: #2B3541;
+        padding: 23px;
+    }
+}
