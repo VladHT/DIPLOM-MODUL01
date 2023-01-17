@@ -871,4 +871,56 @@ main{
         background-color: #2B3541;
         padding: 23px;
     }
+    .grid-elements{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .first-trening ,.second-trening ,.third-trening ,.forth-trening ,.five-trening ,.six-trening{
+        max-width: 306px;
+        max-height: 224px;
+        margin-top: 0;
+    }
+    .grid-elements img{
+        width: 65px;
+        height: 65px;
+        margin: 0 0 35px 20px;
+    }
+    .grid-elements p {
+        margin: 0;
+        margin-left: 149px;
+        margin-bottom: 30px;
+    }
+    .grid-elements h4{
+        margin: 0 52px 20px 24px;
+    }
+    .about-right{
+        display: none;
+    }
+    .about-left{
+        max-width: inherit;
+        max-height: inherit;
+    }
+    .about-footer{
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+    .footer-nav{
+        flex-wrap: wrap;
+    }
+    .footer-nav ul{
+        display: flex;
+        gap: 25px;
+        margin-left: 133px;
+        margin-top: 19px;
+        list-style: none;
+    }
+    .footer-nav .links{
+        margin-left: 8px;
+    }
+    .footer-nav .pochta{
+        margin-left: 368px;
+    }
+    .footer-info{
+        margin-top: 47px;
+    }
 }
