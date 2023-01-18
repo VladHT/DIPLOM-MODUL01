@@ -696,12 +696,20 @@ main{
     margin-bottom: 186px;
 }
 footer{
-    background-image: url(../icons/Pattern.svg);
-    background-position: 1056px 0px;
-    background-repeat: no-repeat;
-    background-size: 47px;
     background-color: #F3F3F3;
     padding-top: 42px;
+}
+.footer-nav img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 170px;
+    top: -7px;
+    z-index: 1;
+}
+.pochta{
+    position: relative;
+    z-index: 2;
 }
 .footer-nav{
     display: flex;
@@ -866,6 +874,9 @@ footer{
         border: none;
         background-position: center;
         background-color:transparent;
+    }
+    .footer-nav img{
+        left: 355px;
     }
     .container{
         max-width: 637px;
@@ -1187,17 +1198,14 @@ footer{
         top: 12px;
         left: 77px;
     }
-    footer{
-    background-image: url(../icons/Pattern.svg);
-    background-position: -2px 141px;
-    background-repeat: no-repeat;
-    background-size: 47px;
-    }
     main{
         margin-bottom: 80px;
     }
     .poyavlenie{
         padding: 10px 14px;
         margin-left: 20px;
+    }
+    .footer-nav img{
+        left: -9px;
     }
 }
