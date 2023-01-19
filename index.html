@@ -7,23 +7,30 @@
     <title>Fitnes</title>
     <link rel="stylesheet" href="st/normalize.css">
     <link rel="stylesheet" href="st/st.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="header">
-                <a href="/Modul-diplom/DIPLOM-MODUL01/logo.svg" class="fitnes"></a>
+                <a href="#" class="fitnes"></a>
                 <button class="fitnes-but" onclick="openModal()"></button>
                 <nav>
                     <ul class="header-nav">
                         <li><a href="#" class="active">Мероприятия</a></li>
-                        <li><a href="#" >Расписание</a></li>
-                        <li><a href="#">О компании</a></li>
+                        <li><a href="#raspisanie" class="rasp">Расписание</a></li>
+                        <li><a href="#about" class="about-comp">О компании</a></li>
                     </ul>
                 </nav>
                 <div class="links">
-                    <a href="" class="header-inst"></a>
-                    <a href="" class="header-FB"></a>
+                    <a href="#" class="header-inst"></a>
+                    <a href="#" class="header-FB"></a>
                 </div>
             </div>
         </div>
@@ -83,7 +90,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="trenings">
+                <section class="trenings" id="raspisanie">
                     <div class="trenings-verh">
                         <h2>Расписание тренировок</h2>
                         <p>22 - 28 июня</p>
@@ -148,17 +155,19 @@
                     </div>
                     <div class="viravnivanie">
                         <div class="rovn">
-                            <input type="email" name="" id="" placeholder="Ваш e-mail">
-                            <button>Подписаться</button>
-                        </div>
-                        <div class="confirm">
-                            <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
-                            <label for="happy"><p>Согласен с обработкой<a href="#">персональных данных</a></p></label>
+                            <div class="soed">
+                                <input type="email" name="" id="" placeholder="Ваш e-mail">
+                                <div class="confirm">
+                                    <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
+                                    <label for="happy"><p><span>Согласен с обработкой</span><a href="#">персональных данных</a></p></label>
+                                </div>
+                            </div>
+                                <button>Подписаться</button>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="about">
+            <section class="about" id="about">
                 <div class="container">
                     <div class="about-header">
                         <div class="about-left">
@@ -198,21 +207,23 @@
                 <a class="fitnes"></a>
                 <ul>
                     <li><a href="#">Мероприятия</a></li>
-                    <li><a href="#">Расписание</a></li>
-                    <li><a href="#">О компании</a></li>
+                    <li><a href="#raspisanie" class="rasp">Расписание</a></li>
+                    <li><a href="#about">О компании</a></li>
                 </ul>
-                <div class="h2-img">
-                    <a href="" class="pochta">info@freefit.com</a>
-                    <img src="icons/Pattern.svg" alt="">
-                </div>
-                <div class="links">
-                    <a href="#" class="header-inst"></a>
-                    <a href="#" class="header-FB"></a>
+                <div class="footer-adapt">
+                    <div class="h2-img">
+                        <a href="mailto:info@freefit.com" class="pochta">info@freefit.com</a>
+                        <img src="icons/Pattern.svg" alt="">
+                    </div>
+                    <div class="links">
+                        <a href="#" class="header-inst"></a>
+                        <a href="#" class="header-FB"></a>
+                    </div>
                 </div>
             </div>
             <div class="footer-info">
                 <a href="#" class="prava">© 2022, Все права защищены</a>
-                <p class="text"><span>Сделано в рамках курса учебной платформы </span><a href="#" class="plat">Annblok</a></p>
+                <p class="text"><span>Сделано в рамках курса учебной платформы </span><a href="https://frontendblok.com/" target="_blank" class="plat">Annblok</a></p>
             </div>
         </div>
     </footer>
@@ -220,8 +231,8 @@
         <a href="/Modul-diplom/DIPLOM-MODUL01/logo.svg" class="fitnes"></a>
         <ul class="header-nav">
             <li><a href="#" class="active">Мероприятия</a></li>
-            <li><a href="#" >Расписание</a></li>
-            <li><a href="#">О компании</a></li>
+            <li><a href="#raspisanie" class="rasp">Расписание</a></li>
+            <li><a href="#about" class="about-comp">О компании</a></li>
         </ul>
         <div class="links">
             <a href="" class="header-inst"></a>
@@ -231,6 +242,8 @@
     </div>
     <script>
 
+        // Modal
+
         function openModal() {
            document.getElementById("modal").style.top = "-20px";
        }
@@ -239,6 +252,39 @@
            document.getElementById("modal").style.top = "-600px";
        }
 
+    //    scrol
+
+       const links = document.querySelectorAll(".rasp");
+
+        for (const link of links) {
+            link.addEventListener("click", clickHandler);
+        }
+
+            function clickHandler(e) {
+            e.preventDefault();
+            const href = this.getAttribute("href");
+
+            document.querySelector(href).scrollIntoView({
+                behavior: "smooth"
+        });
+        }
+
+        // scrol2
+
+        const links2 = document.querySelectorAll(".about-comp");
+
+        for (const link of links2) {
+            link.addEventListener("click", clickHandler);
+        }
+
+            function clickHandler(e) {
+            e.preventDefault();
+            const href = this.getAttribute("href");
+
+            document.querySelector(href).scrollIntoView({
+                behavior: "smooth"
+        });
+        }
     </script>
 </body>
 </html>
