@@ -1290,6 +1290,7 @@ footer{
     }
     .viravnivanie{
         margin-left: 0;
+        max-width: 340px;
     }
     .rovn input{
         padding: 19px 108px 19px 25px;
