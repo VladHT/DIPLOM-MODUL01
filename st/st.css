@@ -705,10 +705,12 @@ input:invalid{
     width: 204px;
 }
 main{
-    margin-bottom: 186px;
+    margin-bottom: 147px;
 }
 footer{
     background-color: #F3F3F3;
+    padding-top: 39px;
+    padding-bottom: 21px;
 }
 .footer-nav img{
     width: 30px;
