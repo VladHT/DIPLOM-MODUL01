@@ -1120,6 +1120,9 @@ footer{
     .links{
         margin-left: 474px;
     }
+    .modal .links{
+        margin-left: 0;
+    }
 }
 @media (max-width: 667px) {
     .container{
